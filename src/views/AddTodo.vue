@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="container">
     <h2>Add Todo</h2>
-    <form @submit.prevent="addTodo">
+    <form class="todo-form" @submit.prevent="addTodo">
       <input type="text" v-model="todoText">
       <button type="submit">Add</button>
     </form>

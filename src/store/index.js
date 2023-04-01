@@ -12,7 +12,9 @@ export default createStore({
   actions: {
     addTodo: ({ commit }, todo) => commit('addTodo', todo),
     removeTodo: ({ commit }, index) => commit('removeTodo', index),
-    toggleTodo: ({ commit }, index) => commit('toggleTodo', index)
+     toggleTodo: ({ commit }, index) => {
+    commit('toggleTodo', index)
+  }
   },
   getters: {
     completedTodos: state => state.todos.filter(todo => todo.completed),
